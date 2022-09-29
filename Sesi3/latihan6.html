@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .kotak1 {
+            width: 50%;
+            background-color: lightblue;
+        }
+
+        .kotak2 {
+            width: 50%;
+            background-color: lightgoldenrodyellow;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                flex-direction: column;
+            }
+            .kotak1 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="kotak1">Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about
+            flexbox, focusing on all the different possible properties for the parent element (the flex container) and
+            the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+        </div>
+        <div class="kotak2">This defines the ability for a flex item to grow if necessary. It accepts a unitless value
+            that serves as a proportion. It dictates what amount of the available space inside the flex container the
+            item should take up.
+
+            If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to
+            all children. If one of the children has a value of 2, that child would take up twice as much of the space
+            either one of the others (or it will try, at least).</div>
+    </div>
+</body>
+
+</html>
